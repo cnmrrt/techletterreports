@@ -425,11 +425,11 @@
 /* Theme toggle (shares the same key as the main page) */
 (function () {
   var root = document.documentElement, KEY = 'techletter-theme';
-  try {
+  /* try {
     var saved = localStorage.getItem(KEY);
     if (saved) root.setAttribute('data-theme', saved);
     else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) root.setAttribute('data-theme', 'dark');
-  } catch (e) {}
+  } catch (e) {} */
   document.getElementById('themeToggle').addEventListener('click', function () {
     var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
