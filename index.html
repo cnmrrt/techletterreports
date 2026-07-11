@@ -1051,9 +1051,9 @@
         <div class="foot-col">
           <h5>Elsewhere</h5>
           <ul>
-            <li><a href="https://www.linkedin.com/in/nesibe-kiris" rel="me">LinkedIn</a></li>
-            <li><a href="https://x.com/nesibekiris" rel="me">Twitter / X</a></li>
-            <li><a href="https://www.techletter.co">techletter.co</a></li>
+            <li><a href="https://www.linkedin.com/in/nesibe-kiris" target="_blank" rel="me">LinkedIn</a></li>
+            <li><a href="https://x.com/nesibekiris" target="_blank" rel="me">Twitter / X</a></li>
+            <li><a href="https://www.techletter.co" target="_blank" rel="me">techletter.co</a></li>
           </ul>
         </div>
       </div>
@@ -1179,45 +1179,6 @@ document.getElementById('yr').textContent = new Date().getFullYear();
 })();
 </script>
 
-<!-- =================================================================== -->
-<!--  IMPLEMENTATION NOTES (safe to delete before publishing)            -->
-<!--                                                                     -->
-<!--  1. FILES / LINKS TO SWAP                                           -->
-<!--     • Hosted PDFs live in /files/... replace with your CDN paths.   -->
-<!--     • All 10 cards link to real PDFs already in /files/. Swap the   -->
-<!--       Agents of Chaos card to add the deck version if you host it.  -->
-<!--     • og:image / twitter:image → add a 1200×630 share graphic.      -->
-<!--     • Newsletter <form action> → your ESP endpoint.                 -->
-<!--                                                                     -->
-<!--  2. SUGGESTED SLUG STRATEGY                                         -->
-<!--     Hub:            /reports                                        -->
-<!--     Category hubs:  /reports/cheat-sheets  /reports/reports         -->
-<!--                     /reports/ai-wrapped                             -->
-<!--     Resource pages: /reports/eu-ai-act-cheat-sheet  (kebab-case,    -->
-<!--                     topic-first, no dates in slug so it stays       -->
-<!--                     stable across versions).                        -->
-<!--                                                                     -->
-<!--  3. INTERNAL LINKING AREAS (build these for SEO authority flow)     -->
-<!--     • Homepage → /reports (primary nav + a "Resources" block).     -->
-<!--     • Each resource detail page → back to /reports (breadcrumb) and -->
-<!--       cross-link 2–3 related resources ("See also" — the PDFs       -->
-<!--       already reference each other, e.g. ISO 42001 ↔ EU AI Act).    -->
-<!--     • Blog/newsletter posts → deep-link the relevant cheat sheet.   -->
-<!--     • Footer → category hubs (already wired above).                 -->
-<!--                                                                     -->
-<!--  4. SCHEMA                                                          -->
-<!--     JSON-LD in <head> covers Organization + CollectionPage +       -->
-<!--     ItemList + FAQPage. When you add resources, extend the          -->
-<!--     ItemList itemListElement array and bump numberOfItems. For      -->
-<!--     resource detail pages, add per-page DigitalDocument/Report +    -->
-<!--     BreadcrumbList schema.                                          -->
-<!--                                                                     -->
-<!--  5. IMAGE ALT TEXT                                                  -->
-<!--     This page is intentionally typographic (no card imagery). If    -->
-<!--     you add thumbnails, use descriptive alts, e.g.                  -->
-<!--     alt="EU AI Act cheat sheet — risk pyramid and compliance        -->
-<!--     timeline, TechLetter".                                          -->
-<!-- =================================================================== -->
 
 <template id="__bundler_thumbnail" data-bg-color="#292B6F">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
