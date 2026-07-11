@@ -211,9 +211,9 @@
     transition: color .2s, border-color .2s, background .2s;
   }
   .theme-toggle:hover { color: var(--ink); border-color: var(--slate); }
-  .theme-toggle .sun { display: none; }
-  html[data-theme="dark"] .theme-toggle .sun { display: block; }
-  html[data-theme="dark"] .theme-toggle .moon { display: none; }
+  .theme-toggle .sun { display: block; }
+  html[data-theme="dark"] .theme-toggle .sun { display: none; }
+  html[data-theme="dark"] .theme-toggle .moon { display: block; }
 
   .btn {
     display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-body);
@@ -340,7 +340,7 @@
   /* ---------- Document viewer overlay ---------- */
   .viewer { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; padding: 3vh 3vw; background: color-mix(in srgb, var(--ink) 62%, transparent); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
   .viewer.open { display: flex; }
-  .viewer-panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px; box-shadow: var(--shadow-lg); width: min(1000px, 100%); height: 94vh; display: flex; flex-direction: column; overflow: hidden; }
+  .viewer-panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px; box-shadow: var(--shadow-lg); width: min(1200px, 100%); height: 94vh; display: flex; flex-direction: column; overflow: hidden; }
   .viewer-bar { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 16px; border-bottom: 1px solid var(--hairline); flex: none; }
   .viewer-bar .vt { font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--ink); line-height: 1.2; }
   .viewer-bar .va { display: inline-flex; align-items: center; gap: 10px; flex: none; }
@@ -705,7 +705,7 @@
           <span class="src">Filed · July 2026 · PDF</span>
           <span style="display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap">
             <a class="btn btn-ghost btn-sm" href="files/the-complete-ai-policy-outline.png" target="_blank" rel="noopener" data-res="policyOutline">View</a>
-            <a class="btn btn-dl btn-sm" href="files/the-complete-ai-policy-outline.png" download="the-complete-ai-policy-outline.png" data-res="policyOutline">Download <span class="arw">→</span></a>
+            <a class="btn btn-dl btn-sm" href="files/the-complete-ai-policy-outline.png" download="the-complete-ai-policy-outline.png">Download <span class="arw">→</span></a>
           </span>
         </div>
       </article>
